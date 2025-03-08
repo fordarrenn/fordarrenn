@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(141, 118, 58);
+    font-family: segoe ui;
+    background-image: url(asset/Heading.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.darkBluebg{
+    color: rgb(14, 14, 36);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* NAV */
+
+.nav{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 3px black;
+}
+
+/* HOME */
+
+header img{
+    height: 200px;
+}
+
+.head{
+    color: rgb(242, 227, 227);
+    text-shadow: 2px 2px 4px black;
+}
+
+#funfact{
+    color: rgb(242, 227, 227);
+    text-shadow: 2px 2px 4px black;
+}
+
+/* ABOUT */
+
+.profil{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    background-color: rgb(23, 31, 53);
+    border-radius: 5px;
+}
+
+.profil img{
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+    border-color: aliceblue;
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(91, 105, 121);
+}
+
+.facts{
+    background-color: rgb(23, 31, 53);
+}
+
+.code img{
+    height: 100px;
+}
+
+/* CONTACT */
+
+.contacts{
+    color: aliceblue;
+    text-shadow: 2px 2px 4px black;
+}
+
+.contacting img{
+    height: 100px;
+}
+
+/* OTHERS */
+
+.spacer{
+    height: 20vh;
+}
+
+.horizonSpacer{
+    width: 140px;
+}
+
+.smallSpacer{
+    margin-right: 10px;
+    margin-left: 10px;
+}

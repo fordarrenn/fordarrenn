@@ -1,0 +1,40 @@
+/* PAGE */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.fox:hover{
+    animation: 3s linear 0s infinite running foxOpac;
+}
+
+.profilepic{
+    animation: 3s linear 0s infinite running profile;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes profile {
+    50%{border-color: aquamarine;}
+    75%{border-color: rgb(225, 255, 245);}
+}
+
+@keyframes foxOpac {
+    50%{opacity: 0;}
+}
+
+/* BUTTON */
+
+.btn:hover{
+    color:aqua;
+}

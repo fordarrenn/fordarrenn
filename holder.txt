@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Darren | Home</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo_container">
+            <a href="home.html"><img src="asset/logo_darren1.png"></a>
+        </div>
+        <div id="menu">
+            <a href="home.html"><button class="menubar button" style="color: white;">HOME</button></a>
+            <a href="about.html"><button class="menubar button" style="color: white;">ABOUT</button></a>
+            <a href="contact.html"><button class="menubar button" style="color: white;">CONTACT</button></a>
+        </div>
+    </nav>
+
+    <center><h1 class="whitetxt" style="text-shadow: 5px 5px 10px black;"><b>Selamat Datang di Website Saya!</b></h1></center>
+    
+    <section class="spacer"></section>
+
+    <div id="slides"> <!-- Use table if you can't do it-->
+
+    </div>
+
+    <div id="others1"> <!-- Add anything here -->
+
+    </div>
+
+    <div id="footer">
+        <div id="left">
+            <h1>Copyright Darren</h1>
+            <p>Jl. H. Rean, Cluster Harmoni Mas
+                <br>Blok C No.8
+                <br>Pamulang, Tangerang Selatan
+            </p>
+        </div>
+        <div id="socmed">
+            <ul>
+                <li><img src="assets/facebook.png"></li>
+                <li><img src="assets/instagram.png"></li>
+                <li><img src="assets/youtube.png"></li>
+            </ul>
+            <p>Copyright 2025 | All Right Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<div class="container mt-4 fade-in">
+        <div class="row justify-content-center">
+            <div class="col-md-5 mx-3">
+                <div class="card shadow-lg bg-info border-primary" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">HALOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</h5>
+                        <p class="card-text">Ini adalah contoh box dengan border-radius 10px.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mx-3">
+                <div class="card shadow-lg bg-info border-primary" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Box 2</h5>
+                        <p class="card-text">Ini adalah contoh box kedua dengan border-radius 10px.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
