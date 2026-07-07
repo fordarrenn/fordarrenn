@@ -59,7 +59,6 @@ function Overview() {
                         justify-center
                     "
                 >
-
                     <img
                         src="https://i.imgur.com/hLOeizR.png"
                         alt="Profile"
