@@ -43,17 +43,16 @@ function NavBar(){
     }, [])
 
     useEffect(() => {
-        if(open){
-            document.body.style.overflow = "hidden"
-        } else {
-            document.body.style.overflow = "auto"
-        }
+        document.body.classList.toggle(
+            "overflow-hidden",
+            open
+        );
 
         return () => {
-            document.body.style.overflow = "auto"
-        }
+            document.body.classList.remove("overflow-hidden");
+        };
 
-    }, [open])
+    }, [open]);
 
     const toggleMenu = () => {
         setOpen(prev => !prev)
