@@ -19,10 +19,7 @@ function App() {
       min-h-screen
     ">
       <NavBar />
-      <main className="
-        pt-24
-        px-6
-      ">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
