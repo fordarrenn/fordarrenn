@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const projects = [
     {
         title: "This Website",
@@ -37,6 +39,33 @@ const projects = [
 ];
 
 function Projects() {
+  const [popup, setPopup] = useState({
+    open: false,
+    url: "",
+  });
+
+  const openExternal = (url) => {
+      setPopup({
+        open: true,
+        url,
+      });
+  };
+
+  const confirmRedirect = () => {
+      window.open(popup.url, "_blank", "noopener,noreferrer");
+
+      setPopup({
+          open: false,
+          url: "",
+      });
+  };
+
+  const cancelRedirect = () => {
+      setPopup({
+          open: false,
+          url: "",
+      });
+  };
     return (
 
         <section
@@ -147,38 +176,38 @@ function Projects() {
 
                                 <div className="flex gap-5 mt-10">
 
-                                    <a
-                                        href={project.demo}
-                                        className="
-                                            bg-red-600
-                                            hover:bg-red-700
-                                            px-6
-                                            py-3
-                                            rounded-xl
-                                        "
-                                    >
+                                    <button
+                                      onClick={() => openExternal(project.demo)}
+                                      className="
+                                          bg-red-600
+                                          hover:bg-red-700
+                                          px-6
+                                          py-3
+                                          rounded-xl
+                                          cursor-pointer
+                                    ">
                                         Demo
-                                    </a>
+                                    </button>
 
-                                    <a
-                                        href={project.github}
+                                    <button
+                                        onClick={() => openExternal(project.github)}
                                         className="
-                                            border
-                                            border-gray-500
-                                            hover:bg-white
-                                            hover:text-black
-                                            px-6
-                                            py-3
-                                            rounded-xl
-                                            transition
-                                        "
-                                    >
+                                          border
+                                          border-gray-500
+                                          hover:bg-white
+                                          hover:text-black
+                                          px-6
+                                          py-3
+                                          rounded-xl
+                                          transition
+                                          cursor-pointer
+                                      ">
                                         GitHub
-                                    </a>
+                                    </button>
 
                                     {project.presentation && (
-                                        <a
-                                            href={project.presentation}
+                                        <button
+                                            onClick={() => openExternal(project.presentation)}
                                             className="
                                                 border
                                                 border-gray-500
@@ -188,10 +217,11 @@ function Projects() {
                                                 py-3
                                                 rounded-xl
                                                 transition
+                                                cursor-pointer
                                             "
                                         >
                                             Presentation
-                                        </a>
+                                        </button>
                                     )}
 
                                 </div>
@@ -205,6 +235,87 @@ function Projects() {
                 </div>
 
             </div>
+
+          {
+
+    popup.open && (
+
+        <div
+            className="
+                fixed
+                inset-0
+                bg-black/70
+                flex
+                justify-center
+                items-center
+                z-50
+            "
+        >
+
+            <div
+                className="
+                    bg-zinc-900
+                    rounded-2xl
+                    p-8
+                    w-100
+                    text-center
+                    shadow-2xl
+                "
+            >
+
+                <h2 className="text-2xl font-bold">
+                    Leaving This Website
+                </h2>
+
+                <p className="mt-5 text-gray-400 leading-7">
+                    You are about to visit an external website in a new browser
+                    tab.
+                </p>
+
+                <p className="mt-3 text-gray-500 text-sm break-all">
+                    {popup.url}
+                </p>
+
+                <div className="flex justify-center gap-4 mt-8">
+
+                    <button
+                        onClick={cancelRedirect}
+                        className="
+                            px-6
+                            py-3
+                            rounded-xl
+                            border
+                            border-gray-500
+                            hover:bg-white
+                            hover:text-black
+                            transition
+                        "
+                    >
+                        Stay Here
+                    </button>
+
+                    <button
+                        onClick={confirmRedirect}
+                        className="
+                            px-6
+                            py-3
+                            rounded-xl
+                            bg-red-600
+                            hover:bg-red-700
+                            transition
+                        "
+                    >
+                        Continue
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    )
+}
 
         </section>
 
