@@ -3,7 +3,7 @@ import './index.css'
 import { Routes, Route } from 'react-router-dom'
 
 // NAVBAR
-import Navbar from './components/NavBar'
+import NavBar from './components/NavBar'
 
 // PAGES
 import Home from './pages/Home'
@@ -18,7 +18,7 @@ function App() {
       text-white
       min-h-screen
     ">
-      <Navbar />
+      <NavBar />
       <main className="
         pt-24
         px-6
