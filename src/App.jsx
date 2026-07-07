@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './index.css'
 import { Routes, Route } from 'react-router-dom'
 
-// NAVBAR
+// NAVBAR AND FOOTER
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 // PAGES
 import Home from './pages/Home'
@@ -27,6 +28,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }

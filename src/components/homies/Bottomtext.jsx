@@ -21,23 +21,22 @@ function Bottomtext() {
 
                 <h2
                     className="
-                        text-4xl
+                        text-2xl
                         font-bold
+                        tracking-[3px]
                     "
                 >
-                    Let's Build Something Amazing Together
+                    AND THE JOURNEY CONTINUES...
                 </h2>
 
                 <p
                     className="
-                        mt-8
-                        text-zinc-400
+                        mt-1
+                        text-neutral-200
                         leading-8
                     "
                 >
-                    Thank you for visiting my portfolio. Feel free to explore
-                    my projects and don't hesitate to contact me if you'd like
-                    to collaborate.
+                    Make sure to check out my projects and get in touch if you need!
                 </p>
 
             </div>
