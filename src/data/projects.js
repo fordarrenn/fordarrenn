@@ -1,10 +1,16 @@
 // DATA FOR PROJECTS
 
-import website from "../assets/images/website_preview.PNG";
-import dartplex from "../assets/images/dartplex_cinemas.png";
-import dartplexPrev from "../assets/images/dartplex_presentation_preview.PNG";
-import dartflix from "../assets/images/dartflix_streaming.png";
-import dartflixPrev from "../assets/images/dartflix_presentation_preview.PNG";
+// WEBSITE
+import website from "../assets/images/website_preview.PNG"
+
+// DARTPLEX
+import dartplex from "../assets/images/dartplex_cinemas.png"
+import dartplexPrev from "../assets/images/dartplex_presentation_preview.PNG"
+
+// DARTFLIX
+import dartflix from "../assets/images/dartflix_streaming.png"
+import dartflixPrev from "../assets/images/dartflix_presentation_preview.PNG"
+import dartflixcollab from "../assets/images/dartflix.jpeg"
 
 export const projects = [
   {
@@ -27,7 +33,8 @@ export const projects = [
     image: dartflix,
     images: [
         dartflix, 
-        dartflixPrev
+        dartflixPrev,
+        dartflixcollab
     ],
     description:
       "A streaming platform built with HTML, CSS, and JavaScript. Using the combination of Node.js, Express, and SQL integration. The continuation and revamp of DartPlex Cinemas.",
