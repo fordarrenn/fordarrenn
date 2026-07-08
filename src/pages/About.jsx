@@ -44,36 +44,12 @@ function About() {
       text-white
     ">
       <div className="
-        max-w-6xl 
-        mx-auto 
-        px-8 
-        py-28 
-        text-center
-      ">
-        <h1 className="
-          text-3xl 
-          font-bold
-          tracking-[3px]
-        ">
-          ABOUT ME
-        </h1>
-        <p className="
-          mt-8 
-          text-gray-400 
-          max-w-3xl 
-          mx-auto 
-          leading-8
-        ">
-          I'm Darren, an Informatics student who currently enroled in Universitas Multimedia Nusantara.
-          Here you can view my brief story, current and past experiences, skills, and facts about me.
-        </p>
-      </div>
-
-      <div className="
+        py-30
         group 
         relative 
         w-90 
-        h-90 
+        h-90
+        my-30
         mx-auto 
         rounded-3xl 
         overflow-hidden 
@@ -116,6 +92,32 @@ function About() {
             group-hover:scale-105 
             group-hover:rotate-3"
         />
+      </div>
+
+      <div className="
+        max-w-6xl 
+        mx-auto 
+        px-8 
+        py-5
+        text-center
+      ">
+        <h1 className="
+          text-3xl 
+          font-bold
+          tracking-[3px]
+        ">
+          ABOUT ME
+        </h1>
+        <p className="
+          mt-8 
+          text-gray-400 
+          max-w-3xl 
+          mx-auto 
+          leading-8
+        ">
+          I'm Darren, an Informatics student who currently enroled in Universitas Multimedia Nusantara.
+          Here you can view my brief story, current and past experiences, skills, and facts about me.
+        </p>
       </div>
 
       <div className="
