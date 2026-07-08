@@ -1,3 +1,5 @@
+import headerpic from "../../assets/images/header.png"
+
 function Headline() {
 
     return (
@@ -11,7 +13,7 @@ function Headline() {
         >
 
             <img
-                src="https://i.imgur.com/hLOeizR.png"
+                src={headerpic}
                 alt="Any"
                 className="
                     absolute
