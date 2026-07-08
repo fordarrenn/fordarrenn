@@ -1,6 +1,68 @@
-import headerpic from "../../assets/images/header.png"
+import { useState, useEffect } from "react";
+
+import headerpic1 from "../../assets/images/header.png"
+import headerpic2 from "../../assets/images/header2.jpeg"
+import headerpic3 from "../../assets/images/header3.jpeg"
+import headerpic4 from "../../assets/images/header4.jpeg"
+// import headerpic5 from "../../assets/images/header5.jpeg"
 
 function Headline() {
+    const slides = [
+            {
+                id: 1,
+                image: headerpic1
+            },
+            {
+                id: 2,
+                image: headerpic2
+            },
+            {
+                id: 3,
+                image: headerpic3
+            },
+            {
+                id: 4,
+                image: headerpic4
+            }
+        ];
+    
+    const [current, setCurrent] = useState(0);
+    const [touchStart, setTouchStart] = useState(null);
+    
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % slides.length);
+        }, 10000);
+    
+        return () => clearInterval(timer);
+    }, [slides.length]);
+
+    const nextSlide = () => {
+        setCurrent((prev) => (prev + 1) % slides.length);
+    };
+
+    const prevSlide = () => {
+        setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+    };
+
+    const handleTouchStart = (e) => {
+        setTouchStart(e.touches[0].clientX);
+    };
+
+    const handleTouchEnd = (e) => {
+        if (touchStart === null) return;
+
+        const touchEnd = e.changedTouches[0].clientX;
+        const distance = touchStart - touchEnd;
+
+        if (distance > 50) {
+            nextSlide();
+        } else if (distance < -50) {
+            prevSlide();
+        }
+
+        setTouchStart(null);
+    };
 
     return (
 
@@ -12,17 +74,32 @@ function Headline() {
             "
         >
 
-            <img
-                src={headerpic}
-                alt="Any"
-                className="
-                    absolute
-                    inset-0
-                    w-full
-                    h-full
-                    object-cover
-                "
-            />
+            <div
+                className="absolute inset-0"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+            >
+                {slides.map((slide, index) => (
+                    <img
+                        key={slide.id}
+                        src={slide.image}
+                        alt="Any"
+                        className={`
+                            absolute 
+                            inset-0 
+                            w-full 
+                            h-full 
+                            object-cover 
+                            transition-opacity 
+                            duration-700 
+                            ease-in-out 
+                            ${
+                                index === current ? "opacity-100" : "opacity-0"
+                            }
+                        `}
+                    />
+                ))}
+            </div>
 
             <div
                 className="
@@ -48,14 +125,37 @@ function Headline() {
                 <h3
                     id="welcome"
                     className="
+                        text-3xl
+                        tracking-tight
+                        mt-6
+                        text-neutral-200
+                    "
+                >
+                    Welcome to
+                </h3>
+
+                <h2
+                    className="
+                        glitch
                         text-6xl
                         font-bold
                         tracking-tight
-                        mt-6
+                    "
+                    data-text="FORDARRENN"
+                >
+                   FORDARRENN
+                </h2>
+
+                <p
+                    className="
+                        text-lg
+                        font-mono
+                        text-neutral-400
+                        tracking-tight
                     "
                 >
-                    Welcome
-                </h3>
+                   Personal Website
+                </p>
 
             </div>
 

@@ -7,8 +7,8 @@ function Home() {
     return(
         <>
             <Headline />
-            <Overview />
             <Highlights />
+            <Overview />
             <Bottomtext />
         </>
     )

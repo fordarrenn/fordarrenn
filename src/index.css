@@ -10,3 +10,36 @@ body {
   background-color: black;
   color: white;
 }
+
+.glitch{
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.glitch::before,
+.glitch::after{
+    content: attr(data-text);
+
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: .25s;
+}
+
+.glitch:hover::before{
+    color: #ff6593;
+    transform: translateX(-1px);
+    opacity: 0.8;
+}
+
+.glitch:hover::after{
+    color: #bef9ff;
+    transform: translateX(1px);
+    opacity: 0.8;
+}

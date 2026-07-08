@@ -43,6 +43,11 @@ export const experiences = [
     {
         id: 1,
         year: "Aug 2024",
+        image: uesc1,
+        images: [
+            uesc1,
+            uesc2
+        ],
         title: "Member of Model of United Nations",
         organization: "UMN English Student Council",
         type: "Student Club",
@@ -54,6 +59,11 @@ export const experiences = [
     {
         id: 2,
         year: "Sep 2024",
+         image: ufest1,
+        images: [
+            ufest1,
+            ufest2
+        ],
         title: "Member of Ticketing Division",
         organization: "UMN Festival 2024",
         type: "University Event",
@@ -65,6 +75,15 @@ export const experiences = [
     {
         id: 3,
         year: "May 2025",
+        image: lab1,
+        images: [
+            lab1,
+            lab2,
+            lab3,
+            lab4,
+            lab5,
+            lab6
+        ],
         title: "Laboratory Helper",
         organization: "UMN Digital Interaction Laboratory",
         type: "UMN Informatics Community",
@@ -76,6 +95,20 @@ export const experiences = [
     {
         id: 4,
         year: "Aug 2025",
+        image: buddy1,
+        images: [
+            buddy1,
+            buddy2,
+            buddy3,
+            buddy4,
+            buddy5,
+            buddy6,
+            buddy7,
+            buddy8,
+            buddy9,
+            buddy10,
+            buddy11
+        ],
         title: "Student Buddy of 2025",
         organization: "UMN Student Buddy",
         type: "University Marketing Team",
@@ -87,6 +120,16 @@ export const experiences = [
     {
         id: 5,
         year: "Aug 2025",
+        image: umnpc1,
+        images: [
+            umnpc1,
+            umnpc2,
+            umnpc3,
+            umnpc4,
+            umnpc5,
+            umnpc6,
+            umnpc7
+        ],
         title: "Coordinator for Finance and Sponsorship",
         organization: "UMN Programming Club",
         type: "Student Club",
@@ -98,6 +141,10 @@ export const experiences = [
     {
         id: 6,
         year: "Jan 2026",
+        image: mslc1,
+        images: [
+            mslc1
+        ],
         title: "Teacher",
         organization: "Miss Susan Learning Center",
         type: "Tutoring Center",

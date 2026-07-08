@@ -1,22 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
+
+import lab from "../../assets/images/lab2.jpeg"
+import buddy from "../../assets/images/buddy11.jpeg"
+import dartflix from "../../assets/images/dartflix_presentation_preview.PNG"
 
 function Highlights() {
 
     const slides = [
         {
-            image: "https://i.imgur.com/hLOeizR.png",
-            title: "Organization",
-            desc: "Serving as committee member during university events."
+            image: lab,
+            title: "Laboratory Helper",
+            desc: "Serving as laboratory helper."
         },
         {
-            image: "https://i.imgur.com/hLOeizR.png",
-            title: "Web Development",
-            desc: "Building responsive websites using React and Tailwind CSS."
+            image: buddy,
+            title: "Student Buddy",
+            desc: "Serving and Guiding international student as Student Buddy"
         },
         {
-            image: "https://i.imgur.com/hLOeizR.png",
-            title: "Projects",
-            desc: "Working on personal and academic software projects."
+            image: dartflix,
+            title: "Team Project",
+            desc: "Dartflix Streaming project!"
         }
     ];
 
@@ -79,6 +83,9 @@ function Highlights() {
                             h-100
                             object-cover
                             rounded-3xl
+                            transition-opacity 
+                            duration-700 
+                            ease-in-out
                         "
                     />
 

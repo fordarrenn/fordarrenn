@@ -1,12 +1,14 @@
 export const skills = [
-  "React",
-  "JavaScript",
-  "Tailwind CSS",
   "HTML",
   "CSS",
+  "JavaScript",
   "Node.js",
   "Express",
+  "Dart",
+  "Kotlin",
   "SQL",
   "C",
-  "Flutter",
+  "C#",
+  "English",
+  "Physics"
 ];

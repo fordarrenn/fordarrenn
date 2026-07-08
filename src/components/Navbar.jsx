@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import '../index.css'
 
 
 function NavBar(){
@@ -112,6 +113,7 @@ function NavBar(){
                 to="/"
                 onClick={closeMenu}
                 className="
+                    glitch
                     absolute
                     left-1/2
                     -translate-x-1/2
@@ -121,7 +123,9 @@ function NavBar(){
                     text-white
                 "
                 >
-                    FORDARRENN
+                    <h1 className="glitch" data-text="FORDARRENN">
+                        FORDARRENN
+                    </h1>
                 </Link>
 
 
@@ -163,7 +167,7 @@ function NavBar(){
             justify-center
             transition-all
             duration-500
-            text-sm
+            text-lg
 
             ${
                 open
