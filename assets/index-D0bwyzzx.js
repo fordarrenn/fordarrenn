@@ -28,31 +28,45 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         `,children:(0,N.jsxs)(`div`,{className:`\r
                 max-w-7xl\r
                 mx-auto\r
-                px-8\r
-                py-3\r
+                px-4\r
+                py-4\r
                 flex\r
-                justify-between\r
                 items-center\r
+                justify-between\r
+                relative\r
             `,children:[(0,N.jsx)(jn,{to:`/`,onClick:a,className:`\r
                     glitch\r
+                    text-lg\r
+                    md:text-xl\r
+                    font-bold\r
+                    tracking-[0.25em]\r
+                    md:tracking-[0.4em]\r
+                    text-white\r
+                    z-50\r
                     absolute\r
                     left-1/2\r
                     -translate-x-1/2\r
-                    text-xl\r
-                    font-bold\r
-                    tracking-[0.4em]\r
-                    text-white\r
-                `,children:(0,N.jsx)(`h1`,{className:`glitch`,"data-text":`FORDARRENN`,children:`FORDARRENN`})}),(0,N.jsx)(`div`,{}),(0,N.jsx)(`button`,{onClick:i,className:`\r
-                    text-white\r
-                    tracking-widest\r
-                    text-sm\r
-                    border\r
-                    border-neutral-700\r
-                    px-5\r
-                    py-2\r
-                    rounded-full\r
-                    hover:border-white\r
-                    transition\r
+                `,children:(0,N.jsx)(`h1`,{className:`glitch`,"data-text":`FORDARRENN`,children:`FORDARRENN`})}),(0,N.jsx)(`div`,{className:`\r
+                    w-6 \r
+                    h-6 \r
+                    pointer-events-none\r
+                `}),(0,N.jsx)(`button`,{onClick:i,className:`\r
+                        ml-auto\r
+                        text-white\r
+                        tracking-widest\r
+                        text-xs\r
+                        md:text-sm\r
+                        border\r
+                        border-neutral-700\r
+                        px-4\r
+                        md:px-5\r
+                        py-2\r
+                        rounded-full\r
+                        hover:border-white\r
+                        transition\r
+                        z-50\r
+                        cursor-pointer\r
+                        -mr-1\r
                 `,children:n?`✕`:`MENU`})]})}),(0,N.jsx)(`div`,{className:`
             fixed
             inset-0
@@ -164,17 +178,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 `}),(0,N.jsxs)(`div`,{className:`\r
                     absolute\r
                     inset-0\r
-                    flex\r
-                    flex-col\r
-                    justify-center\r
+                    h-full\r
+                    w-full\r
+                    grid\r
+                    content-end\r
                     z-10\r
-                    px-9\r
-                    pointer-events-none\r
-                    pt-32\r
+                    px-6\r
                     sm:px-12\r
                     md:px-20\r
-                    sm:pt-24\r
-                    md:pt-0\r
+                    pointer-events-none\r
+                    pb-16\r
+                    sm:pb-20\r
+                    md:pb-24\r
                 `,children:[(0,N.jsx)(`h3`,{id:`welcome`,className:`\r
                         text-3xl\r
                         tracking-tight\r
