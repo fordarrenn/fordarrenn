@@ -88,7 +88,7 @@ function Footer() {
                         </a>
 
                         <a
-                            href="mailto:fordarrenn@gmail.com"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=fordarrenn@gmail.com"
                             className="
                                 hover:text-blue-300
                                 transition
