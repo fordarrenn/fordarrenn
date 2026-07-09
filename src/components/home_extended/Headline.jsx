@@ -108,7 +108,6 @@ function Headline() {
 
             <div
                 className="
-                    pt-30
                     absolute
                     inset-0
                     flex
@@ -117,6 +116,11 @@ function Headline() {
                     z-10
                     px-9
                     pointer-events-none
+                    pt-32
+                    sm:px-12
+                    md:px-20
+                    sm:pt-24
+                    md:pt-0
                 "
             >
 
@@ -135,10 +139,16 @@ function Headline() {
                 <h2
                     className="
                         glitch
-                        text-6xl
+                        w-fit
                         font-bold
                         tracking-tight
                         pointer-events-auto
+                        text-4xl
+                        sm:text-6xl
+                        md:text-7xl
+                        lg:text-8xl
+                        sm:tracking-normal
+                        md:tracking-wide
                     "
                     data-text="FORDARRENN"
                 >
@@ -151,6 +161,9 @@ function Headline() {
                         font-mono
                         text-neutral-400
                         tracking-tight
+                        mt-1
+                        sm:text-base
+                        md:text-lg
                     "
                 >
                    Personal Website
