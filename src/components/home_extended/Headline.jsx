@@ -110,17 +110,18 @@ function Headline() {
                 className="
                     absolute
                     inset-0
-                    flex
-                    flex-col
-                    justify-center
+                    h-full
+                    w-full
+                    grid
+                    content-end
                     z-10
-                    px-9
-                    pointer-events-none
-                    pt-32
+                    px-6
                     sm:px-12
                     md:px-20
-                    sm:pt-24
-                    md:pt-0
+                    pointer-events-none
+                    pb-16
+                    sm:pb-20
+                    md:pb-24
                 "
             >
 

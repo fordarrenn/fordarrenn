@@ -100,11 +100,12 @@ function NavBar(){
             className="
                 max-w-7xl
                 mx-auto
-                px-8
-                py-3
+                px-4
+                py-4
                 flex
-                justify-between
                 items-center
+                justify-between
+                relative
             "
             >
 
@@ -114,13 +115,16 @@ function NavBar(){
                 onClick={closeMenu}
                 className="
                     glitch
+                    text-lg
+                    md:text-xl
+                    font-bold
+                    tracking-[0.25em]
+                    md:tracking-[0.4em]
+                    text-white
+                    z-50
                     absolute
                     left-1/2
                     -translate-x-1/2
-                    text-xl
-                    font-bold
-                    tracking-[0.4em]
-                    text-white
                 "
                 >
                     <h1 className="glitch" data-text="FORDARRENN">
@@ -130,22 +134,32 @@ function NavBar(){
 
 
 
-                <div></div>
+                <div className="
+                    w-6 
+                    h-6 
+                    pointer-events-none
+                "></div>
 
 
                 <button
-                onClick={toggleMenu}
-                className="
-                    text-white
-                    tracking-widest
-                    text-sm
-                    border
-                    border-neutral-700
-                    px-5
-                    py-2
-                    rounded-full
-                    hover:border-white
-                    transition
+                    onClick={toggleMenu}
+                    className="
+                        ml-auto
+                        text-white
+                        tracking-widest
+                        text-xs
+                        md:text-sm
+                        border
+                        border-neutral-700
+                        px-4
+                        md:px-5
+                        py-2
+                        rounded-full
+                        hover:border-white
+                        transition
+                        z-50
+                        cursor-pointer
+                        -mr-1
                 "
                 >
                     {open ? "✕" : "MENU"}
