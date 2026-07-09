@@ -6,6 +6,10 @@ import { experiences } from "../data/experiences"
 import { skills } from "../data/skills"
 import { facts } from "../data/facts"
 
+// FILES
+import cv_me from "../assets/files/CV_Darren.pdf"
+import resume_me from "../assets/files/Resume_Darren.pdf"
+
 function About() {
   const profileNormal = about.find((item) => item.title === "me")?.image || ""
   const profileFocus = about.find((item) => item.title === "me_focus")?.image || ""
@@ -164,6 +168,61 @@ function About() {
           ">
             I enjoy solving logical problems, creating logical code blueprint, building websites, experimenting on applications, and deeply in love to learn more.
           </p>
+          <div className="
+            mt-3
+            flex
+            flex-wrap
+            gap-3
+          ">
+            <a
+              href={cv_me}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                px-6 
+                py-3 
+                text-sm 
+                font-semibold 
+                tracking-widest 
+                text-black 
+                bg-white 
+                rounded-full 
+                hover:bg-neutral-400 
+                transition-all 
+                duration-300 
+                shadow-lg 
+                text-center
+                min-w-30
+              "
+            >
+              VIEW CV
+            </a>
+            <a
+              href={resume_me}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                px-6 
+                py-3 
+                text-sm 
+                font-semibold 
+                tracking-widest 
+                text-white 
+                bg-transparent
+                rounded-full
+                border
+                border-neutral-100
+                hover:bg-neutral-700 
+                transition-all 
+                duration-300 
+                shadow-lg 
+                text-center
+                min-w-30
+              "
+            >
+              VIEW RESUME
+            </a>
+          </div>
         </div>
       </div>
 
@@ -337,18 +396,24 @@ function About() {
       </div>
 
       <div className="
+        text-center
         max-w-6xl 
         mx-auto 
         px-8 
-        py-20
+        py-6
       ">
         <h2 className="
-          text-4xl 
+          text-3xl 
           font-bold 
           text-center 
+          items-center
           mb-16
-        ">
-          Skills
+          tracking-tight
+          glitch
+          "
+          data-text="SKILLS"
+        >
+          SKILLS
         </h2>
         <div className="
           flex 
