@@ -161,7 +161,8 @@ function NavBar(){
             fixed
             inset-0
             z-40
-            bg-black
+            bg-black/35
+            backdrop-blur-lg
             flex
             items-center
             justify-center

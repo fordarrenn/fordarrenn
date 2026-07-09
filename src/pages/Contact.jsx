@@ -1,10 +1,14 @@
 function Contact() {
   return (
-    <div>
-      <h1 className="text-5xl font-bold">
-        Contact Me
-      </h1>
-    </div>
+    <section className="
+      min-h-screen
+      bg-black
+      text-white
+      px-8
+      py-24
+    ">
+      
+    </section>
   )
 }
 

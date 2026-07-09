@@ -27,12 +27,12 @@ function Highlights() {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
-        const timer = setInterval(() => {
+        const timer = setTimeout(() => {
             setCurrent((prev) => (prev + 1) % slides.length);
-        }, 4000);
+        }, 7000);
 
-        return () => clearInterval(timer);
-    }, []);
+        return () => clearTimeout(timer);
+    }, [current]);
 
     const nextSlide = () => {
         setCurrent((current + 1) % slides.length);

@@ -32,16 +32,15 @@ function Headline() {
 
     const autoplay = useRef(
         Autoplay({
-            delay: 10000,
+            delay: 7000,
             stopOnInteraction: false,
-            stopOnMouseEnter: true,
+            stopOnMouseEnter: false,
         })
     );
 
     const [emblaRef] = useEmblaCarousel(
         {
-            loop: true,
-            dragFree: true
+            loop: true
         },
         [
             Fade(),
