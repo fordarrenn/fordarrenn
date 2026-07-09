@@ -196,9 +196,9 @@ function NavBar(){
                 className="
                     font-bold
                     tracking-widest
-                    hover:text-green-400
-                    transition
+                    glitch
                 "
+                data-text="HOME"
                 >
                     HOME
                 </Link>
@@ -210,9 +210,9 @@ function NavBar(){
                 className="
                     font-bold
                     tracking-widest
-                    hover:text-yellow-400
-                    transition
+                    glitch
                 "
+                data-text="PROJECTS"
                 >
                     PROJECTS
                 </Link>
@@ -224,9 +224,9 @@ function NavBar(){
                 className="
                     font-bold
                     tracking-widest
-                    hover:text-red-500
-                    transition
+                    glitch
                 "
+                data-text="ABOUT"
                 >
                     ABOUT
                 </Link>
@@ -238,9 +238,9 @@ function NavBar(){
                 className="
                     font-bold
                     tracking-widest
-                    hover:text-blue-400
-                    transition
+                    glitch
                 "
+                data-text="CONTACT"
                 >
                     CONTACT
                 </Link>

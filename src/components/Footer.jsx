@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 function Footer() {
 
@@ -73,6 +73,18 @@ function Footer() {
                             "
                         >
                             <FaLinkedin />
+                        </a>
+
+                        <a
+                            href="https://instagram.com/fordarrenn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                hover:text-blue-300
+                                transition
+                            "
+                        >
+                            <FaInstagram />
                         </a>
 
                         <a

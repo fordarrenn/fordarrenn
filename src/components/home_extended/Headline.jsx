@@ -1,4 +1,8 @@
-import { useState, useEffect } from "react";
+// HELPER LIBS
+import useEmblaCarousel from "embla-carousel-react"
+import Autoplay from "embla-carousel-autoplay"
+import Fade from "embla-carousel-fade"
+import { useRef } from "react"
 
 import headerpic1 from "../../assets/images/header.png"
 import headerpic2 from "../../assets/images/header2.jpeg"
@@ -25,44 +29,25 @@ function Headline() {
                 image: headerpic4
             }
         ];
-    
-    const [current, setCurrent] = useState(0);
-    const [touchStart, setTouchStart] = useState(null);
-    
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrent((prev) => (prev + 1) % slides.length);
-        }, 10000);
-    
-        return () => clearInterval(timer);
-    }, [slides.length]);
 
-    const nextSlide = () => {
-        setCurrent((prev) => (prev + 1) % slides.length);
-    };
+    const autoplay = useRef(
+        Autoplay({
+            delay: 10000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+        })
+    );
 
-    const prevSlide = () => {
-        setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-    };
-
-    const handleTouchStart = (e) => {
-        setTouchStart(e.touches[0].clientX);
-    };
-
-    const handleTouchEnd = (e) => {
-        if (touchStart === null) return;
-
-        const touchEnd = e.changedTouches[0].clientX;
-        const distance = touchStart - touchEnd;
-
-        if (distance > 50) {
-            nextSlide();
-        } else if (distance < -50) {
-            prevSlide();
-        }
-
-        setTouchStart(null);
-    };
+    const [emblaRef] = useEmblaCarousel(
+        {
+            loop: true,
+            dragFree: true
+        },
+        [
+            Fade(),
+            autoplay.current
+        ]
+    );
 
     return (
 
@@ -75,30 +60,42 @@ function Headline() {
         >
 
             <div
-                className="absolute inset-0"
-                onTouchStart={handleTouchStart}
-                onTouchEnd={handleTouchEnd}
+                className="
+                    absolute 
+                    inset-0
+                    overflow-hidden
+                "
+                ref={emblaRef}
             >
-                {slides.map((slide, index) => (
-                    <img
-                        key={slide.id}
-                        src={slide.image}
-                        alt="Any"
-                        className={`
-                            absolute 
-                            inset-0 
-                            w-full 
-                            h-full 
-                            object-cover 
-                            transition-opacity 
-                            duration-700 
-                            ease-in-out 
-                            ${
-                                index === current ? "opacity-100" : "opacity-0"
-                            }
-                        `}
-                    />
-                ))}
+                <div
+                    className="
+                        flex
+                        h-full
+                ">
+                    {slides.map((slide) => (
+                        <div
+                            key={slide.id}
+                            className="
+                            flex-[0_0_100%]
+                            h-full
+                        ">
+                            <img 
+                                src={slide.image}
+                                alt="Any"
+                                draggable={false}
+                                className="
+                                    w-full
+                                    h-full
+                                    object-cover
+                                    select-none
+                                    transition-opacity 
+                                    duration-700 
+                                    ease-in-out
+                                "
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
 
             <div
@@ -106,6 +103,7 @@ function Headline() {
                     absolute
                     inset-0
                     bg-black/60
+                    pointer-events-none
                 "
             />
 
@@ -119,6 +117,7 @@ function Headline() {
                     justify-center
                     z-10
                     px-9
+                    pointer-events-none
                 "
             >
 
@@ -140,6 +139,7 @@ function Headline() {
                         text-6xl
                         font-bold
                         tracking-tight
+                        pointer-events-auto
                     "
                     data-text="FORDARRENN"
                 >
