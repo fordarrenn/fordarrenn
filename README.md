@@ -1,16 +1,19 @@
-# React + Vite
+# FORDARRENN | Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello there, welcome to my personal portfolio website! I'm really excited to share my work and experiences to you. Designed with a dark mode aesthetic, chromatic-glicth effect, and convenient to visit!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Update!
 
-## React Compiler
+- **Major Update 4:** Finished the whole website, will be updated more in the future
+- **What's New** Headline is revamped! Multiple slideshows, drag and swipe is now AVAILABLE!
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Composition
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** React (Vite template)
+- **Styling:** Tailwind CSS v4.0
+- **Routing:** React Router DOM
+- **Icons:** React Icons (`react-icons/fa`) and Custom made for Favicon

@@ -43,6 +43,42 @@ body {
     opacity: 0.8;
 }
 
+/* Other Glitch */
+.glitch-hover {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.glitch-hover::before,
+.glitch-hover::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 1rem;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.glitch-hover::before {
+  border: 1px solid #ff6593;
+}
+
+.glitch-hover::after {
+  border: 1px solid #bef9ff;
+}
+
+.glitch-hover:hover::before {
+  opacity: 0.8;
+  transform: translate(-2px, -1px);
+}
+
+.glitch-hover:hover::after {
+  opacity: 0.8;
+  transform: translate(2px, 1px);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
