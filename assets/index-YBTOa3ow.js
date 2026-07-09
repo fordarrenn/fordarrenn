@@ -162,7 +162,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     bg-black/60\r
                     pointer-events-none\r
                 `}),(0,N.jsxs)(`div`,{className:`\r
-                    pt-30\r
                     absolute\r
                     inset-0\r
                     flex\r
@@ -171,6 +170,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     z-10\r
                     px-9\r
                     pointer-events-none\r
+                    pt-32\r
+                    sm:px-12\r
+                    md:px-20\r
+                    sm:pt-24\r
+                    md:pt-0\r
                 `,children:[(0,N.jsx)(`h3`,{id:`welcome`,className:`\r
                         text-3xl\r
                         tracking-tight\r
@@ -178,15 +182,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                         text-neutral-200\r
                     `,children:`Welcome to`}),(0,N.jsx)(`h2`,{className:`\r
                         glitch\r
-                        text-6xl\r
+                        w-fit\r
                         font-bold\r
                         tracking-tight\r
                         pointer-events-auto\r
+                        text-4xl\r
+                        sm:text-6xl\r
+                        md:text-7xl\r
+                        lg:text-8xl\r
+                        sm:tracking-normal\r
+                        md:tracking-wide\r
                     `,"data-text":`FORDARRENN`,children:`FORDARRENN`}),(0,N.jsx)(`p`,{className:`\r
                         text-lg\r
                         font-mono\r
                         text-neutral-400\r
                         tracking-tight\r
+                        mt-1\r
+                        sm:text-base\r
+                        md:text-lg\r
                     `,children:`Personal Website`})]})]})}function Fi(){return(0,N.jsx)(`section`,{id:`overview`,className:`\r
                 min-h-screen\r
                 bg-zinc-950\r
