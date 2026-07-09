@@ -61,6 +61,7 @@ function About() {
         <img
           src={profileNormal}
           alt="Profile Normal"
+          draggable={false}
           className="
             absolute 
             inset-0 
@@ -78,6 +79,7 @@ function About() {
         <img
           src={profileFocus}
           alt="Profile Focus"
+          draggable={false}
           className="
             absolute 
             inset-0 
@@ -133,6 +135,7 @@ function About() {
         <img
           src={story}
           alt="Any"
+          draggable={false}
           className="
             w-full 
             rounded-3xl 
@@ -224,6 +227,7 @@ function About() {
                 ">
                   <img src={images[currentIndex]}
                     alt={exp.title}
+                    draggable={false}
                     className="
                       w-full 
                       h-56 

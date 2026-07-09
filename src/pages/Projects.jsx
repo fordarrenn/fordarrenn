@@ -114,6 +114,7 @@ function Projects() {
                             <img
                                 src={images[currentIndex]}
                                 alt={project.title}
+                                draggable={false}
                                 className="
                                     w-full 
                                     h-96 

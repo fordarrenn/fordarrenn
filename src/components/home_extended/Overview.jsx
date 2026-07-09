@@ -62,6 +62,7 @@ function Overview() {
                     <img
                         src="https://i.imgur.com/hLOeizR.png"
                         alt="Profile"
+                        draggable={false}
                         className="
                             w-80
                             rounded-3xl
